@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: 'Kanit';
+            src: url(./Kanit/Kanit-ExtraLight.ttf)
+        }
+    body {
+    background-color: wheat;
+    font-family: 'Kanit', sans-serit;
+    }
+    #register-form {
+        color:black;
+        padding-left: 20px;
+        margin-left: 20px;
+        padding-left: 20px;
+        margin-left: 20px;
+        border: 1px solid black;
+        text-align: center;
+
+    }
+    .form-control {
+        border: 2px solid black;
+        margin-bottom: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div id="register-form"> Register Formxxx </div>
+   
+    ชื่อ : <input class="form-control" type="text" name="name">
+    นามสกุล : <input class="form-control" type="text" name="surname"><br>
+    อายุ : <input type="text" name="age" min="0" max="150"><br>
+    เพศ :
+    <input type="radio" name="gender" value="male"> ชาย
+    <input type="radio" name="gender" value="femle"> หญิง <br>
+    งานอดิเรก : 
+    <input type="checkbox" name="hobby" value="reading"> อ่านหนังสือ 
+    <input type="checkbox" name="hobby" value="traveling"> ท่องเที่ยว 
+    <input type="checkbox" name="hobby" value="sports"> กีฬา <br>
+    คำอธิบาย : <br>
+    <textarea name="description" rows="4" cols="50"></textarea><br>
+    <input yype="submit" valus="Submit">
+</body>
+</html>

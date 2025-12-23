@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button1 {
+            background-color: blue;
+            color: wheat;
+            padding: 10px 20px;
+        }
+        .button1:hover {
+            background-color: green;
+        }
+        .button1:active {
+            background-color: red;
+        }
+        .button1:focus {
+            background-color: yellow;
+        }
+        input:focus {
+            background-color: orange;
+        }
+
+
+        .item1 + .item2{
+            background-color: lightblue;
+        }
+
+        .container .item {
+            background-color: lightblue;
+        }
+        .button {
+            background-color: green;
+            color: beige;
+            padding:10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button.active {
+            background-color: blue;
+        }
+        .button.warning {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        Container content
+        <div class="item">
+            Item conteent
+        </div>
+    </div>
+     <div class="footer-container">
+        Container content
+        <div class="item">
+            Item conteent
+        </div>
+    </div>
+
+    <div>
+        <button class="button"> Click Me </button>
+        <button class="button warning"> Warning </button>
+        <button class="button active"> Delete </button>
+    </div>
+
+    <div class="item1"> Item 1 </div>
+    <div class="item2"> Item 2 </div>
+
+    <input type="text" name="sample-input">
+    <input type="text" name="another-input">
+    <input type="text" name="number-input"> <br>
+
+    <br> <button1 class="button1"> Click me!</button1>
+</body>
+</html>
