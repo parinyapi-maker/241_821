@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    เพศ:
+    <input type="radio" name="gender" value="male" onchange="onchangeGender()" check = "true">ชาย
+    <input type="radio" name="gender" value="female" onchange="onchangeGender()">หญิง
+    <!-- <button onclick="userClicked()">Submit</button>
+    <div onclick="devCleck()"> dev Clicked</div> -->
+    <!-- งานอดิเรก:
+    <input type="checkbox" name="hobby" value="football">Football
+    <input type="checkbox" name="hobby" value="basketball">basketball
+    <input type="checkbox" name="hobby" value="tennis">Tennis -->
+    <!-- ชื่อ <input
+    class = "input"
+    id="fname"
+    type="text" 
+    name="fname" 
+    value="Michael"> -->
+    <!-- นามสกุล <input
+    id="lname"
+    class = "input"
+    type="text" 
+    name="lname" 
+    value="Jordan"> -->
+    <script>
+        function onchangeGender() {
+        //เลือก gender ทุก input ออกมา
+        let genderInputs = document.querySelectorAll('input[name="gender"]');
+        
+        //ตัวไหน checked ให้เอา input มาแสดง
+        for (let i=0;i < genderInputs.length; i++){
+            if (genderInputs[i].checked) {
+                console.log("เพศที่เลือก: " + genderInputs[i].value);
+            }
+        }
+        }
+        // function userClicked() {
+        //     console.log("User clicked the button");
+        // }
+        // function devCleck() {
+        //     console.log("Developer clicked the div!");
+        // }
+        // let checkboxs = document.querySelectorAll('input[name="hobby"]');
+        // for (let i = 0; i < checkboxs.length; i++) {
+        //     console.log(checkboxs[i].value);
+        // }
+        // const fnameInput = document.querySelector('input[name="fname"]');
+        // console.log(fnameInput.value)
+        // for (let i = 0; i < fnameInput.length; i++) {
+        //     console.log(fnameInput[i].value);
+        // }
+        // const fnameInput = document.getElementById("fname");
+        // console.log(fnameInput.value);
+        // const lnameInput = document.getElementById("lname");
+        // console.log(lnameInput.value);
+    </script>
+</body>
+</html>
