@@ -6,9 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    เพศ:
+    <h2>แบบฟอมเลือกความสนใจ</h2>
+        <div id ="content"></div>
+    <input type="checkbox" name="interest" value="กีฬา">
+    <input type="checkbox" name="interest" value="ดนตรี">
+    <input type="checkbox" name="interest" value="อ่านหนังสือ">
+    <dr></dr>
+    <button onclick="submitInterest()">ส่งข้อมูล</button>
+
+    <!--- <div id = "hi">Hi <span style="display: none;">A</span></div> --->
+
+    <!--- <button 
+    onmouseover="onmousoverFname()"
+    onmouseup="onmouseupFname()"
+    onmousedown="onmousedown()"
+    >Click me!</button> --->
+
+    <!--ชื่อ:
+    <input type="text" name="Fname" onkeydown="onkeyname()"> -->
+
+    <!--เพศ:
     <input type="radio" name="gender" value="male" onchange="onchangeGender()" check = "true">ชาย
-    <input type="radio" name="gender" value="female" onchange="onchangeGender()">หญิง
+    <input type="radio" name="gender" value="female" onchange="onchangeGender()">หญิง -->
     <!-- <button onclick="userClicked()">Submit</button>
     <div onclick="devCleck()"> dev Clicked</div> -->
     <!-- งานอดิเรก:
@@ -28,17 +47,53 @@
     name="lname" 
     value="Jordan"> -->
     <script>
-        function onchangeGender() {
+        function submitInterest() {
+            let checkboxs = document.querySelectorAll(input[name="inerst"]);
+            for (let i = 0; i < checkboxs.length; i++) {
+                if (checkboxs[i].checked){
+                    //console.log(checkboxs[i].value);//แสดงค่าใน console
+                    contentHTML += '<li>' + checkboxs[i].value + '</li>';
+                }
+            }
+            //วนค่าที่เลื่อกลงไปใน html
+            contentHTML += '</ul>';
+            //ใส่ html ที่สร้างขึ้นใหม่ลงไปใน div id content
+            let contentDiv = document.getElementById("content");
+            contentDiv.innerHTML = contentHTML;
+        }
+
+        //let hiDOM = document.getElementById("hi");
+        //hiDOM.innerHTML = 'hello <b>A<b>';
+        //console.log(hiDOM.textContent);
+        //console.log(hiDOM.innerText);
+        //console.log(hiDOM.innerHTML);
+
+        //function onmouseoverFname() {
+        //    console.log("Mouse id over the button");
+        //}
+        //function onmouseupFname() {
+        //    console.log("Mouse id up the button");
+        //}
+        //function onmousedown() {
+        //    console.log("Mouse down");
+        //}
+
+        //function onkeyfname() {
+        //    let fname =document.querySelector('input[name="fname"]')
+        //    console.log('fname',fname.value);
+        //}
+
+        //function onchangeGender() {
         //เลือก gender ทุก input ออกมา
-        let genderInputs = document.querySelectorAll('input[name="gender"]');
+        //let genderInputs = document.querySelectorAll('input[name="gender"]');
         
         //ตัวไหน checked ให้เอา input มาแสดง
-        for (let i=0;i < genderInputs.length; i++){
-            if (genderInputs[i].checked) {
-                console.log("เพศที่เลือก: " + genderInputs[i].value);
-            }
-        }
-        }
+        //for (let i=0;i < genderInputs.length; i++){
+        //    if (genderInputs[i].checked) {
+        //        console.log("เพศที่เลือก: " + genderInputs[i].value);
+        //    }
+        //}
+        //}
         // function userClicked() {
         //     console.log("User clicked the button");
         // }

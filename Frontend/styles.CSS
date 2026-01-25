@@ -1,0 +1,97 @@
+/* นำเข้า Font เพื่อความทันสมัย */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1a73e8;
+}
+
+.form-input {
+    margin-bottom: 1.2rem;
+}
+
+.header-form {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* จัดการ Input Text และ Number */
+.form, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-sizing: border-box; /* สำคัญมาก */
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form:focus, textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* จัดระเบียบ Flex */
+.flex {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender .flex {
+    margin-top: 5px;
+}
+
+/* ตกแต่ง Textarea */
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* ปุ่มกด */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #1557b0;
+}
+
+.center {
+    text-align: center;
+}
