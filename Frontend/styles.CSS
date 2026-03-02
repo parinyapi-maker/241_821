@@ -95,3 +95,20 @@ textarea {
 .center {
     text-align: center;
 }
+
+.massage {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.massage.success {
+    background-color: #4caf4c;
+    color: wheat;
+}
+
+.massage.danger {
+    background-color: #f44336;
+    color: white;   
+}
