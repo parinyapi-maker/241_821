@@ -18,6 +18,7 @@ for (let i = 0; i < response.data.length; i++) {
     let user = response.data[i];
     htmlData += `<div">
     ${user.firstname} ${user.lastname}
+    <a href="index.html id=${user.id}"><button></a>
     <button>Edit</button>
     <button class ='delete' data-id='${user.id}'>Delete</button>
 
